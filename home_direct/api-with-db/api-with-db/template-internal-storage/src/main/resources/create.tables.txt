@@ -1,0 +1,1 @@
+CREATE TABLE user (username VARCHAR(100) PRIMARY KEY, password VARCHAR(120), fullname VARCHAR(120), email VARCHAR(120), phone VARCHAR(120), creationDate BIGINT(8), modificationDate BIGINT(8), status INTEGER);

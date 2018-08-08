@@ -1,0 +1,4 @@
+com/homedirect/template/repository/exception/RepositoryException.class
+com/homedirect/template/database/H2DatabaseConfiguration.class
+com/homedirect/template/repository/UserRepository.class
+com/homedirect/template/database/MySqlConfiguration.class

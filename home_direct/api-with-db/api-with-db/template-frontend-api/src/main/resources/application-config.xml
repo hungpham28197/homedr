@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:int="http://www.springframework.org/schema/integration"
+	xsi:schemaLocation="
+    http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/mvc
+  	http://www.springframework.org/schema/mvc/spring-mvc.xsd    
+    http://www.springframework.org/schema/integration 
+	http://www.springframework.org/schema/integration/spring-integration.xsd">
+
+
+	<context:component-scan base-package="com.homedirect.template.database" />
+	<context:component-scan base-package="com.homedirect.template.service.validator" />
+	<context:component-scan base-package="com.homedirect.template.service.impl" />
+	<context:component-scan base-package="com.homedirect.template.font.validator" />
+	<context:component-scan base-package="com.homedirect.template.font.transform" />
+	
+	<context:component-scan base-package="com.homedirect.template.font.controller" />
+
+	<import resource="integration-account.xml" />
+	
+	<bean scope="singleton" id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basename" value="messages" />
+	</bean>
+
+	<bean id="jsonView"
+		class="org.springframework.web.servlet.view.json.MappingJackson2JsonView">
+		<property name="contentType" value="text/plain" />
+	</bean>
+
+	<bean id="jacksonMessageConverter"
+		class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter" />
+
+	<bean
+		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+		<property name="messageConverters">
+			<list>
+				<ref bean="jacksonMessageConverter" />
+			</list>
+		</property>
+	</bean>
+
+</beans>

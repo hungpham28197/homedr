@@ -1,0 +1,4 @@
+com/homedirect/template/request/UserRegistryRequest.class
+com/homedirect/template/response/ResponseCode.class
+com/homedirect/template/response/TemplateResponse.class
+com/homedirect/template/request/UserLoginRequest.class

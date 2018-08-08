@@ -1,0 +1,5 @@
+com/homedirect/template/service/UserService.class
+com/homedirect/template/service/impl/UserServiceImpl.class
+com/homedirect/template/service/impl/AbstractServiceImpl.class
+com/homedirect/template/service/validator/UserStorageValidator.class
+com/homedirect/template/service/validator/UserLoginStorageValidator.class

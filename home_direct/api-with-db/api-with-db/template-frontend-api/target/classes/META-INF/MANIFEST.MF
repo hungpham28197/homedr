@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: Template Frontend API Application
+Implementation-Version: 1.0
+Built-By: hungpham
+Implementation-Vendor-Id: com.homedirect.template
+Build-Jdk: 1.8.0_151
+Implementation-URL: http://homedirect.com.vn
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

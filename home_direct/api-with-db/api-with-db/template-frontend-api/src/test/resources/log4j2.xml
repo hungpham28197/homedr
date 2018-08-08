@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration monitorInterval="60">
+	<Appenders>
+		<Console name="stdout" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%msg" />
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Logger name="com.homedirect" level="debug" additivity="false">
+			<appender-ref ref="stdout" />
+		</Logger>
+		<Logger name="org.springframework.data" level="debug"
+			additivity="false">
+			<appender-ref ref="stdout" />
+		</Logger>
+		<Root level="info" additivity="false">
+			<appender-ref ref="stdout" />
+		</Root>
+	</Loggers>
+</Configuration>

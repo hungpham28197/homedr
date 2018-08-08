@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.homedirect.template</groupId>
+		<artifactId>hdr-template</artifactId>
+		<version>1.0</version>
+		<relativePath>../</relativePath>
+	</parent>	
+
+	<groupId>com.homedirect.template</groupId>
+	<artifactId>template-frontend-api</artifactId>
+	<version>1.0</version>
+	<name>Template Frontend API Application</name>
+	<url>http://homedirect.com.vn</url>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.homedirect.template</groupId>
+			<artifactId>template-internal-service</artifactId>
+			<version>1.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.homedirect.template</groupId>
+			<artifactId>template-frontend-model</artifactId>
+			<version>1.0</version>
+		</dependency>
+
+
+		<!-- tomcat lib -->
+
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.el</groupId>
+			<artifactId>el-api</artifactId>
+			<version>2.2</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.sun.el</groupId>
+			<artifactId>el-ri</artifactId>
+			<version>1.0</version>
+			<scope>runtime</scope>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<finalName>template-frontend-api</finalName>
+		<sourceDirectory>src/main/java</sourceDirectory>
+		<testSourceDirectory>src/test/java</testSourceDirectory>
+
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>

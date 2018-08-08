@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>com.homedirect.template</groupId>
+		<artifactId>hdr-template</artifactId>
+		<version>1.0</version>
+		<relativePath>../</relativePath>
+	</parent>	
+
+	<groupId>com.homedirect.template</groupId>
+	<artifactId>template-internal-common</artifactId>
+	<version>1.0</version>
+	<name>Template Internal Common Library</name>
+	<url>http://homedirect.com.vn</url>
+
+	<dependencies>		
+		
+	</dependencies>
+
+	<build>
+		<finalName>template-internal-common</finalName>
+		<sourceDirectory>src/main/java</sourceDirectory>
+		<testSourceDirectory>src/test/java</testSourceDirectory>
+		
+		<plugins>
+			
+		</plugins>
+	</build>
+</project>
